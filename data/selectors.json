@@ -1,0 +1,8 @@
+
+{
+  "general": {
+    "header": "$('h1')",
+    "total-result": "h3.total-count"
+  }
+
+}
