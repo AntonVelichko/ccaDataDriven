@@ -1,6 +1,7 @@
 
 const selectorGen = require('./../data/selectors.json').general;
 const expectedGen = require('./../data/expected.json').general;
+const selectorCnt = require('./../data/selectors.json').counter;
 
 
 describe('Complex Counter App', function () {
@@ -54,7 +55,6 @@ describe('Complex Counter App', function () {
 
     });
 
-
     describe('Elements value', function () {
 
         it('TC-009 Header = Counter', function () {
@@ -93,7 +93,48 @@ describe('Complex Counter App', function () {
         })
     });
 
+    describe('Default Elements Counter Exist', function () {
+
+        it('TC-016 Counter Name', function () {
+            const actual = $$(selectorCnt.counterName)[1].isDisplayed();
+            expect(actual).toEqual(true);
+        })
+
+        it('TC-017 Count Value', function () {
+            const actual = $(selectorCnt.countValue).isDisplayed();
+            expect(actual).toEqual(true);
+        })
+
+        it('TC-018 LLF', function () {
+            const actual =  $(selectorCnt.lowerLimitField).isDisplayed();
+            expect(actual).toEqual(true);
+        })
+
+        it('TC-019 ULF', function () {
+            const actual =  $(selectorCnt.upperLimitField).isDisplayed();
+            expect(actual).toEqual(true);
+        })
+
+        it('TC-020, TC-021 Default Sun & End Buttons', function () {
+            //const actual =  $$(selectorCnt.blackBtn).map(el => el.isDisplayed());
+            const actual =  $$(selectorCnt.blackBtn);
+            expect(actual).toBeDisplayed();
+        })
+
+    //     it('TC-007 Label for Default Value Field', function () {
+    //         const actual =  $$(selectorGen.defaultValueFieldLabel)[$$(selectorGen.defaultValueFieldLabel).length-1].isDisplayed();;
+    //         expect(actual).toEqual(true);
+    //     })
+    //
+    //     it('TC-008 Add Counter', function () {
+    //         const actual =  $(selectorGen.addCounterBtn).isDisplayed();
+    //         expect(actual).toEqual(true);
+    //     })
+    //
+    });
 
 
 
 });
+
+
