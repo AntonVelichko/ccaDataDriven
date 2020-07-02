@@ -91,7 +91,7 @@ exports.config = {
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
     baseUrl: 'https://likejean.github.io/homework-5/',
-    //
+    // https://docs.google.com/spreadsheets/d/1NsqRkCVBg9ZiBVLdbN2zaJE6DydGM1scx8s6fzNfg4Y/edit?usp=sharing
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
     //

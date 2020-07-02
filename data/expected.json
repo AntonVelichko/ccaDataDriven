@@ -24,10 +24,11 @@
     "defaultNumberBlackBtn": 6,
     "blackBtn": ["-1", "-2", "-3", "1", "2", "3"]
   },
-    "defaultCounyFunc": {
+
+  "defaultCounyFunc": {
     "countValueTC040": "-1",
     "countValueTC041": "2",
-    "inputMin": 1,
-    "inputMax": 9
+    "inputMin": "1",
+    "inputMax": "9"
   }
 }
